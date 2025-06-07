@@ -4,14 +4,14 @@ import { getStorage } from "firebase/storage";
 import { collection, addDoc } from "@firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBYdUht59xdbvmwsK0FWmptMsvrjKIdaTQ",
-  authDomain: "personal-portfolio-avneet.firebaseapp.com",
-  databaseURL: "https://personal-portfolio-avneet-default-rtdb.firebaseio.com",
-  projectId: "personal-portfolio-avneet",
-  storageBucket: "personal-portfolio-avneet.firebasestorage.app",
-  messagingSenderId: "724710003378",
-  appId: "1:724710003378:web:59208a8981d359b2066fab",
-  measurementId: "G-NVWPL6RX8D"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize with a unique name
